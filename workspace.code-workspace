@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Challenges"
+		},
+		{
+			"path": "../projects"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "projects"
+	}
+}
