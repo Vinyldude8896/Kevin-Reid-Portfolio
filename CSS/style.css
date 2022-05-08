@@ -29,7 +29,6 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 40px;
-    color: blue;
     margin: 0;
 
 }
@@ -59,10 +58,10 @@ header nav ul li a {
 .hero {
     height: 150px;
     width: 100%;
-    margin-bottom: 25px;
     background-image: url(../images/code\ stream.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: 80%;
+    background-attachment: fixed;
     opacity: 0.75;
 }
 
@@ -78,48 +77,64 @@ header nav ul li a {
 
 /* Aside Bar Style Properties Start */
 
-.aside-bar {
-    margin-bottom: 20px;
+.about-work {
+    background-color: cadetblue;
+    font-size: 28px;
+
+}
+
+.about-me {
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me img {
+    width: 200px;
+    height: 200px;
     margin-left: 10px;
-    padding-top: 0;
-    padding-left: 20px;
-    float: left;
-    width: 25%;
-    height: 100%;
-    background-color: slategrey;
 }
 
-.aside-bar img {
-    
-    max-width: 250px;
-    max-height: 250px;
-}
-
-.aside-bar h2 {
-    text-align: right;
-    display: inline;
+.about-me h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--secondary-color);
     margin-top: 0px;
-    padding-right: 10px;
-
+    margin-left: 40px;
+    margin-right: 30px;
 }
 
-/* Main Content Section */
+.about-me p {
+    font-size: 22px;
+    margin-left: 30px;
+}
 
- .content {
-     width: 75%;
-     display: inline;
-     margin-left: 20px;
- }
+.my-work {
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+}
 
- .content-about-me {
-     font-size: 35px;
-     color: var(--secondary-color);
-     background-color: aqua;
-     border: solid black;
- }
+.my-work img {
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
-/* footer style properties start */
+.my-work h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    margin-top: 0px;
+    margin-left: 25px;
+    margin-right: 30px;
+}
 
-footer {
-
+.my-work p {
+    font-size: 22px;
+    margin-left: 30px;
 }
