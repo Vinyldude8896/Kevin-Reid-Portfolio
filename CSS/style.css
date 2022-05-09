@@ -3,13 +3,14 @@
     --secondary-color: black;
     --variable-color: #d8e4bc;
 }
-
+/* Global Style Properties */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Style Properties */
 body {
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -63,6 +64,8 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.75vw;
 }
+
+/* Header properties when hovering over */
 
 header nav ul li a:hover {
     background: var(--variable-color);
@@ -124,7 +127,6 @@ header nav ul li a:hover {
     margin-top: 0px;
     margin-left: 40px;
     margin-right: 30px;
-
 }
 
 .about-me p {
@@ -133,12 +135,12 @@ header nav ul li a:hover {
     margin-right: 25px;
     display: flex;
     justify-content: center;
-
 }
 /* About me properties style ends */
 
 /* My Work Properties Start */
 
+/* Container Style Properties */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -163,6 +165,9 @@ header nav ul li a:hover {
 
 }
 
+/* Container Style Properties end */
+
+/* My Work Style Properties */
 .my-work {
     background-color: #d8e4bc;
     padding-bottom: 50px;
@@ -253,6 +258,8 @@ header nav ul li a:hover {
 
 /* Contact Me Properties End */
 
+/* Section Title Properties */
+
 .section-title {
     font-size: 40px;
     font-weight: bold;
@@ -264,4 +271,78 @@ header nav ul li a:hover {
 
 .section-title:not(:last-child) {
     border-right: 3px solid #2e8b57;
+}
+
+/* Media Query for Smaller Screens Style Properties */
+
+@media screen and (max-width:980px) {
+    
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    
+    header h1 {
+        width: 70%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero h2 {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .about-me h2 {
+        width: 80%;
+        text-align: left;
+    }
+
+    .about-me img {
+        width: 75px;
+        height: 75px;
+        margin-top: 0px;
+    }
+
+    .about-me p {
+        width: 80%;
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-title {
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--secondary-color);
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 30px;
+    }
+
 }
