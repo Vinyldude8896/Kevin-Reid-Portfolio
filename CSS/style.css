@@ -1,5 +1,267 @@
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --variable-color: #d8e4bc;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header Style Properties Start */
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("../images/code\ stream.jpeg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+}
+
+
+header h1 {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+
+}
+
+.seo {
+    color: var(--primary-color);
+    font-size: 30px;
+
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.75vw;
+}
+
+header nav ul li a:hover {
+    background: var(--variable-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/* Header Style Properties end */
+
+/* Hero Style Propertie Start */
+.hero {
+    height: 150px;
+    width: 100%;
+    background-image: url(../images/code\ stream.jpeg);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    opacity: 0.95;
+}
+
+.hero h2 {
+  margin-bottom: 15px;
+  margin-right: 10px;
+  padding: 50px;
+  text-align: right;
+  color: var(--primary-color);
+}
+
+/* Hero Style Sectiion end */
+
+/* About me style properties Start */
+
+.about-work {
+    background-color: cadetblue;
+    font-size: 28px;
+
+}
+
+.about-me {
+    background-color: var(--variable-color) ;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.about-me img {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.about-me h2 {
+    font-size: 30px;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 30px;
+
+}
+
+.about-me p {
+    font-size: 22px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+
+}
+/* About me properties style ends */
+
+/* My Work Properties Start */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.container img {
+    height: 85%;
+    width: 85%;
+    margin-right: 10px;
+}
+
+.container2 img {
+    height: 70%;
+    width: 70%;
+
+}
+
+.my-work {
+    background-color: #d8e4bc;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+}
+
+.my-work-main {
+    background-color: #d8e4bc;
+    padding-bottom: 50px;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.my-work-main img {
+    width: 600px;
+    height: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: inline;
+}
+.my-work-main h2 {
+    font-size: 30px;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.my-work img {
+  flex: 1 15%;
+  margin-right: 20px;
+  flex-wrap: wrap;
+}
+
+.my-work h2 {
+    font-size: 30px;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.my-work p {
+    font-size: 22px;
+    display: inline;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+/* My Work Propeties End */
+
+/* Contact Me Properties Start */
+.contact-me {
+    background-color: #d8e4bc;
+    padding-bottom: 50px;
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    justify-content:flex-start;
+}
+
+.contact-me h2 {
+    font-size: 30px;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 30px;
+    justify-content: space-between;
+}
+
+.contact-me  h3{
+    font-size: 25px;
+    width: 100%;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Contact Me Properties End */
+
+.section-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 30px;
+}
+
+.section-title:not(:last-child) {
+    border-right: 3px solid #2e8b57;
 }
