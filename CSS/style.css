@@ -268,7 +268,7 @@ header nav ul li a:hover {
 }
 
 .contact-me h2 {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
     color: var(--secondary-color);
     width: 100%;
@@ -280,11 +280,25 @@ header nav ul li a:hover {
 
 .contact-me  h3 {
     font-size: 22px;
+    text-decoration: none;
     width: 100%;
     margin-left: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+
+.contact-me img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding-right: 8px;
+    border-radius: 85%;
+
+}
+
+.contact-me a {
+    text-decoration: none;
 }
 
 /* Contact Me Properties End */
@@ -385,6 +399,13 @@ header nav ul li a:hover {
 
     .contact-me h3 {
         font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-me img a {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -409,7 +430,21 @@ header nav ul li a:hover {
         text-align: center;
     }
 
+    .contact-me h2 {
+        font-size: 25px;
+        width: 80%;
+    }
 
+    .contact-me h3 {
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-me img a {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
 
 }
@@ -464,5 +499,20 @@ header nav ul li a:hover {
         margin-left: 0;
     }
    
+    .contact-me h2 {
+        font-size: 25px;
+        width: 80%;
+    }
+
+    .contact-me h3 {
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-me img a {
+        display: flex;
+        flex-wrap: wrap;
+    }
   
 }
