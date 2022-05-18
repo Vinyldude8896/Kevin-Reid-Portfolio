@@ -1,6 +1,7 @@
 :root {
     --primary-color: white;
     --secondary-color: black;
+    --toolbar-textcolor: #e5e4e2;
     --variable-color: #d8e4bc;
     --toolbar-color: #8fbc8f;
     --accent-color: #a9ba9d;
@@ -19,15 +20,15 @@ body {
 
 /* Header Style Properties Start */
 header {
-    background-color: var(--toolbar-color);
+    /* background-color: #2e8b57; */
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* background-image: url("../images/code\ stream.jpeg"); */
+    background-image: url("../images/code\ stream.jpeg");
     background-size: cover;
-    /* background-position: 80%; */
-    /* background-attachment: fixed; */
+    background-position: 80%;
+    background-attachment: fixed;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
@@ -36,23 +37,24 @@ header {
 
 
 header h1 {
-    color: var(--secondary-color);
-    font-weight: bold;
+    color: var(--toolbar-textcolor);
+    font-weight:bolder;
     font-size: 40px;
-    margin: 0;
+    margin-left: 25px;
 
 }
 
 .seo {
-    color: var(--secondary-color);
+    color: var(--toolbar-textcolor);
     font-size: 30px;
+    font-weight: bold;
 
 }
 
 header a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--secondary-color);
+    color: var(--toolbar-textcolor);
 }
 
 header nav ul {
@@ -83,8 +85,8 @@ header nav ul li a:hover {
 .hero {
     height: 150px;
     width: 100%;
-    background-color: var(--accent-color);
-    /* background-image: url(../images/code\ stream.jpeg); */
+    /* background-color: var(--accent-color); */
+    background-image: url(../images/code\ stream.jpeg);
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
@@ -97,8 +99,7 @@ header nav ul li a:hover {
   padding: 50px;
   text-align: right;
   font-size: 24px;
-  font-weight: lighter;
-  color: var(--secondary-color);
+  color: #cfcfc4;
 }
 
 /* Hero Style Sectiion end */
@@ -315,6 +316,10 @@ header nav ul li a:hover {
     display:flex;
 }
 
+.section-title h3 {
+    display: flex;
+}
+
 
 .section-title:not(:last-child) {
     border-right: 3px solid #2e8b57;
@@ -453,21 +458,29 @@ header nav ul li a:hover {
 
 @media screen and (max-width: 575px) {
 
-    .about-me p {
-        width: 80%;
-        font-size: 11px;
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 5px;
+    .about-me {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+     .about-me p {
+        width: 70%;
+        font-size: 12px;
+        margin-left: 120px;
+        margin-right: 40px;
+        margin-top: 5px;
+        display:flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+   
     .my-work {
         width: 100%;
         display: flex;
     }
 
+    
     .my-work img {
         width: 70px;
         height: 70px;
@@ -476,29 +489,6 @@ header nav ul li a:hover {
 
     .my-work h2 {
         font-size: 25px;
-    }
-
-    .container {
-        flex-wrap: wrap;
-    }
-
-    .container2 {
-        flex-wrap: wrap;
-        justify-content: left;
-    }
-
-    .container h2 {
-        font-size: 20px;
-        margin-left: 0;
-    }
-
-    .container2 h2 {
-        font-size: 20px;
-        margin-left: 0px;
-    }
-
-    .container2 img {
-        margin-left: 0px;
     }
 
     .section-title h2 {
@@ -510,20 +500,29 @@ header nav ul li a:hover {
         margin-left: 0;
     }
    
-    .contact-me h2 {
-        font-size: 25px;
-        width: 80%;
-    }
 
-    .contact-me h3 {
+    .section-title h3 {
         font-size: 20px;
         display: flex;
         flex-wrap: wrap;
+        margin-left: 115px;
+        margin-top: 0;
     }
 
-    .contact-me img a {
+    .section-title img {
+        display: flex;
+        flex-wrap: wrap;
+        height: 45px;
+        width: 45px;
+    }
+
+    .section-title a {
         display: flex;
         flex-wrap: wrap;
     }
   
+    .contact-me {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
