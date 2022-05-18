@@ -285,7 +285,8 @@ header nav ul li a:hover {
     width: 100%;
     margin-left: 40px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: left;
     /* justify-content: space-between; */
 }
 
@@ -299,6 +300,9 @@ header nav ul li a:hover {
 }
 
 .contact-me a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     text-decoration: none;
 }
 
@@ -316,9 +320,16 @@ header nav ul li a:hover {
     display:flex;
 }
 
-.section-title h3 {
+.section-title h3 img {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
+.section-title a {
+    margin-top: 10px;
+}
+
 
 
 .section-title:not(:last-child) {
