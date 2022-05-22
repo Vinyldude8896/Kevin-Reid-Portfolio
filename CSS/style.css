@@ -20,12 +20,12 @@ body {
 
 /* Header Style Properties Start */
 header {
-    /* background-color: #2e8b57; */
+    background-color: #87a96b;
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url("../images/code\ stream.jpeg");
+    /* background-image: url("../images/code\ stream.jpeg"); */
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
@@ -37,7 +37,7 @@ header {
 
 
 header h1 {
-    color: var(--toolbar-textcolor);
+    color: var(--secondary-color);
     font-weight:bolder;
     font-size: 40px;
     margin-left: 25px;
@@ -45,7 +45,7 @@ header h1 {
 }
 
 .seo {
-    color: var(--toolbar-textcolor);
+    color: var(--secondary-color);
     font-size: 30px;
     font-weight: bold;
 
@@ -54,7 +54,7 @@ header h1 {
 header a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--toolbar-textcolor);
+    color: var(--secondary-color);
 }
 
 header nav ul {
