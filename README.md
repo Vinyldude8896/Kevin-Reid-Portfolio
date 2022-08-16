@@ -15,4 +15,4 @@ My work contains a large image for the main project, and smaller images for the 
 
 The contact me has phone, email and linked in contact info.
 
-link to live page is here: https://vinyldude8896.github.io/Kevin-Reid-Portfolio/
+link to live page is here: https://pure-wildwood-93361.herokuapp.com
